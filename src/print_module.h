@@ -12,5 +12,5 @@
 */
 void print_log(char (*print)(char), char* message);
 char print_char(char ch);
-/* void printModule(int *mask, int count, ...); */
+void printModule(int* mask, int count, ...);
 #endif  // PRINT_MODULE_H
