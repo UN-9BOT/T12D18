@@ -1,4 +1,6 @@
 #include "print_module.h"
+
+#include "documentation_module.h"
 char print_char(char ch) { return putchar(ch); }
 
 void print_log(char (*print)(char), char* message) {
@@ -18,3 +20,13 @@ void print_log(char (*print)(char), char* message) {
         print(*(message + i));
     }
 }
+
+/* void printModule(int *mask, int count, ...) { */
+/*     va_list target; */
+/*     va_start(target, count); */
+/*     for (int i = 0; i < count; i++) { */
+/*         char *aval = (mask[i] == 1) ? "available" : "unavailable"; */
+/*         char *trash = va_arg(target, char *); */
+/*         printf("[%-15.s : %s]", trash, aval); */
+/*     } */
+/* } */

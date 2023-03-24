@@ -4,7 +4,6 @@
 #define Module_load_success_message "Output stream module load: success\n"
 #define Log_prefix "[LOG]"
 
-#include <stdio.h>
 #include <time.h>
 /*
     input:  printchar-callback, log message
@@ -13,4 +12,5 @@
 */
 void print_log(char (*print)(char), char* message);
 char print_char(char ch);
+/* void printModule(int *mask, int count, ...); */
 #endif  // PRINT_MODULE_H
